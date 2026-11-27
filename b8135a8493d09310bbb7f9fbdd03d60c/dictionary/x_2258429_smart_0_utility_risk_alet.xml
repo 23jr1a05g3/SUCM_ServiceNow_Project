@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="08e6b1c493e85f50bbb7f9fbdd03d6c1" label="Utility Risk Alert" max_length="40" name="x_2258429_smart_0_utility_risk_alet" type="collection">
+        <element choice="3" label="Asset Type" max_length="40" name="asset_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Electric Pole" sequence="4" value="electric_pole"/>
+                <element inactive_on_update="false" label="Drainage" sequence="6" value="drainage"/>
+                <element inactive_on_update="false" label="Power Feeder" sequence="2" value="power_feeder"/>
+                <element inactive_on_update="false" label="Others" sequence="7" value="others"/>
+                <element inactive_on_update="false" label="Road" sequence="5" value="road"/>
+                <element inactive_on_update="false" label="Transformer" sequence="3" value="transformer"/>
+                <element inactive_on_update="false" label="water Pipeline" sequence="0" value="water_pipeline"/>
+                <element inactive_on_update="false" label="Pumping Station" sequence="1" value="pumping_station"/>
+            </choice>
+        </element>
+        <element choice="1" label="Alert Status" max_length="40" name="status" type="choice">
+            <choice/>
+        </element>
+        <element label="Asset ID" max_length="40" name="asset_id" type="string"/>
+        <element label="Related Asset" max_length="40" name="related_asset" type="string"/>
+        <element label="Depends On" max_length="32" name="depends_on" reference="x_2258429_smart_0_infrastructure_asset" type="reference"/>
+        <element label="Location" max_length="40" name="location" type="string"/>
+        <element label="Affected Ward" max_length="32" name="ward" reference="x_2258429_smart_0_ward_details" type="reference"/>
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Asset Name" max_length="40" name="asset_name" type="string"/>
+        <element label="Last Maintanance Date" max_length="40" name="last_maintanance_date" type="glide_date_time"/>
+        <element label="Alert Name" max_length="40" name="alert_name" type="string"/>
+        <element choice="1" label="Risk Type" max_length="40" name="service_department" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Roads" sequence="2" value="roads"/>
+                <element inactive_on_update="false" label="Water" sequence="0" value="water"/>
+                <element inactive_on_update="false" label="Power" sequence="1" value="power"/>
+            </choice>
+        </element>
+        <element label="Issued Date" max_length="40" name="issued_date" type="glide_date_time"/>
+        <element label="Affected Asset" max_length="32" name="affected_asset" reference="x_2258429_smart_0_infrastructure_asset" type="reference"/>
+        <index name="index">
+            <element name="affected_asset"/>
+        </index>
+        <index name="index2">
+            <element name="depends_on"/>
+        </index>
+        <index name="index3">
+            <element name="ward"/>
+        </index>
+    </element>
+</database>

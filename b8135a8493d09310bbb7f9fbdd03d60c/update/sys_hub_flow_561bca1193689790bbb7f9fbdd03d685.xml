@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=integrated,timeFromCreateToActivate=1731000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
+        <copied_from_name>FlowTemplate_Empty</copied_from_name>
+        <description>Whenever a citizen submits anew civic issue, automatically set its initial status and priority.</description>
+        <display_name_after_preview/>
+        <flow_priority/>
+        <generation_source/>
+        <internal_name>civic_issue_flow</internal_name>
+        <label_cache>[{"name":"Created_1.table_name","label":"Trigger - Record Created➛Civic Issue Table","reference":"x_2258429_smart_0_civic_issue","reference_display":"Civic Issue","type":"table_name","base_type":"table_name","usedInstances":{"ae34f81c-86bf-4347-9b36-891e6bd2b84f":["table_name"]},"attributes":{"test_input_hidden":"true"}}]</label_cache>
+        <master_snapshot>01b11a1d93689790bbb7f9fbdd03d677</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Civic Issue Flow</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>11b15a1d93689790bbb7f9fbdd03d605</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-13 13:14:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>561bca1193689790bbb7f9fbdd03d685</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>Civic Issue Flow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Smart Urban Corporation Management" source="x_2258429_smart_0">b8135a8493d09310bbb7f9fbdd03d60c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Urban Corporation Management">b8135a8493d09310bbb7f9fbdd03d60c</sys_scope>
+        <sys_update_name>sys_hub_flow_561bca1193689790bbb7f9fbdd03d685</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-13 13:48:59</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>55e29e9d93689790bbb7f9fbdd03d631</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=561bca1193689790bbb7f9fbdd03d685"/>
+    <sys_variable_value action="delete_multiple" query="document_key=561bca1193689790bbb7f9fbdd03d685"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_2258429_smart_0_civic_issue">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-13 13:43:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>11b15a1d93689790bbb7f9fbdd03d605</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Smart Urban Corporation Management">b8135a8493d09310bbb7f9fbdd03d60c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-13 13:43:51</sys_updated_on>
+        <table>x_2258429_smart_0_civic_issue</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>561bca1193689790bbb7f9fbdd03d685</identifier>
+        <identifier_type>flow</identifier_type>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-13 13:43:51</sys_created_on>
+        <sys_id>59b15a1d93689790bbb7f9fbdd03d606</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-13 13:47:18</sys_updated_on>
+        <trigger display_value="">11b15a1d93689790bbb7f9fbdd03d605</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=561bca1193689790bbb7f9fbdd03d685^sys_idNOT IN59b15a1d93689790bbb7f9fbdd03d606"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=561bca1193689790bbb7f9fbdd03d685"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=561bca1193689790bbb7f9fbdd03d685^sys_idNOT INd61bca1193689790bbb7f9fbdd03d696"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>561bca1193689790bbb7f9fbdd03d685</id>
+        <name>Civic Issue Flow</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-13 13:14:58</sys_created_on>
+        <sys_id>d61bca1193689790bbb7f9fbdd03d696</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-13 13:14:58</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=d61bca1193689790bbb7f9fbdd03d696"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=561bca1193689790bbb7f9fbdd03d685^sys_idNOT IN11bbce5193689790bbb7f9fbdd03d608,51bb8e5193689790bbb7f9fbdd03d686"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Civic Issue Flow">561bca1193689790bbb7f9fbdd03d685</model>
+        <model_id>561bca1193689790bbb7f9fbdd03d685</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_561bca1193689790bbb7f9fbdd03d685</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-13 13:17:38</sys_created_on>
+        <sys_id>11bbce5193689790bbb7f9fbdd03d608</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Smart Urban Corporation Management">b8135a8493d09310bbb7f9fbdd03d60c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-13 13:43:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=11bbce5193689790bbb7f9fbdd03d608"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Civic Issue Flow">561bca1193689790bbb7f9fbdd03d685</model>
+        <model_id>561bca1193689790bbb7f9fbdd03d685</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_561bca1193689790bbb7f9fbdd03d685</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-13 13:17:38</sys_created_on>
+        <sys_id>51bb8e5193689790bbb7f9fbdd03d686</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Smart Urban Corporation Management">b8135a8493d09310bbb7f9fbdd03d60c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-13 13:43:48</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=51bb8e5193689790bbb7f9fbdd03d686"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=561bca1193689790bbb7f9fbdd03d685"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=561bca1193689790bbb7f9fbdd03d685"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=561bca1193689790bbb7f9fbdd03d685^sys_idNOT IN8dbb4a1d93289790bbb7f9fbdd03d62e"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Civic Issue Flow">561bca1193689790bbb7f9fbdd03d685</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-13 13:17:37</sys_created_on>
+        <sys_id>8dbb4a1d93289790bbb7f9fbdd03d62e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-13 13:43:49</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VYXW/iOBT9K1GediVGygcU6Nss7WgrdVstZXYfqm7kODZYa2wmcdJhR/3ve50PCPmgUKBDXyrF1/U99/j4XJvHHyZHPuHmpTlBPidmx2RCkVAgPlkuCAwrPewJNNexORIBUjJcmpcqjEnHpKGcT8h8wZGCyRTxCAZlGJDQvLQ7ZoJ4TB6W0U0AK8H/p8vka5p5GL6/e47TG3SdoRfNUag8y8MsYdhjURTreQGLIMPyr3z6SAeNmzyIZ4wHIRHm5eNTx1ygEHIonf9HJaSgIG+jWuMuK4tpeJhiNHSIhV3bdRzLcgZd279wfdsJXEQsC+ZVqaqUoxoYW3NBvisiAhKsaKqRGRIU3Au+XM2YwV5kxM3R94j9B6sPLD2PEqgKkyy2+vRynrJhPJMMk/uFYlJkIxnOLCh5PBd3GX7NMKEo5qpgGEbiCNYjCw1Zg8gR0YeZfB4XCb8wkVaXB7nEiK++kFIh82NFIr0VlHHYFC/jJpJxmKIfX4/ux1fe358no9+vx974+mEyvhlNrq/Ml7Qu71usV8wQ5li8rJyXlSy+MML1Bop47gOajhnhkC3UZ6xYUojypbMW+kiKgKWs1MSOi1C0Kfai+m1qt6xWveNSxkLz/1z/WVd2Nvg2RY/K2FNFX1wgFBDUomiflhRd5qQBtGqgp1z3Nm3nI7uIu2tZP0neuZu9Vd1zGRB+tV7OhOB0CnpnYhErzdYzEirylPRQEHglHvVUwPSa3LPa6pp/Xe1hLGAJb7VDdc2nRK4YvWURFPAIJ/aBfIuzbfgE9kUL8tIMMJ3e5hnGsTAk7Cz8MXAcAnfKKCyR3szRNKccFuQEq5JK6Neo/PUH+D0T01IRbRhSzmoQVtlBfEZRcAYlOhDL0zHtoL4lSYXbii283ROKvU39wLYp9Ql1rL52A9tyfWpbfauHaOBaFnZKflCH2IpdVWR0El/YzxWiVMB8B31Wic/BW+UTtJO4kk1lFiRo4eTmMzoONPtI0BwNrWKi7l4uuhJrNny1qdltpR35boGCBMF/BLuaqZ6wg2tSLp/BwA93TB/hf6ehjEVQ9SydwmDCWM8wfsnp/PV07kllSLbj2ZxxTr653pRC1kgsT+aYLrX9IekSC4zSBY/0e8Ohj5FDaf+iTxy74phrcI2IP4RTviLJpEnTba7ZKKekSYV7+OUBAGveuTfAw10zl2ujZ2axj+GOzzMiPIAaelz7X80kp5wFpIgd1wNqqZP1qT+WD9zmRensdDDEPbvfx314Q4EL0C7xkd11emjYv3AHvYoL1OBtg64a2HqXl1W0jFIgLQ7xNQud148Ip5RyRJTSjevgbi/gepwugbKcpRard8lIfUeGxp0Un27W84wHAp0zfW2fqO3vAkpvu/GuqHypZrVrCCD5DcY3kOjLbQtnZ/e6qygq2az1RK870h30htRtdik6bHKpNcR28Gd/a9nxVCWt57Pp+rLrqUgaD1frfeMNwq6Ip3wR2XJTOhYp9tFJcU5Hinvw7aw4oa1P2reA/UBdML2aHLEVagjEk7Ts8FfSgIABOQ1GjfyXUhIY/tJQMwIMc7iVQ35DgznU2rd0njqylb5/Kq7sFVBriDBs5Be28+t1Fd28x9ucBH3U67ktt/Jh9W3eBPOVKs6+8+19kpKmg7m1/e23bnXNxgZYEvKmTnZsbUeturm/HVZ1Y4d7rerDe9e2XxYaUJxpV3r6H0GUsAaTIAAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=561bca1193689790bbb7f9fbdd03d685^sys_idNOT INdb1c421193689790bbb7f9fbdd03d611"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>ab575ae253b3230034c6ddeeff7b12f1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Civic Issue Flow">561bca1193689790bbb7f9fbdd03d685</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-13 13:19:24</sys_created_on>
+        <sys_id>db1c421193689790bbb7f9fbdd03d611</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Smart Urban Corporation Management">b8135a8493d09310bbb7f9fbdd03d60c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-13 13:48:49</sys_updated_on>
+        <ui_id>ae34f81c-86bf-4347-9b36-891e6bd2b84f</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VTVPbMBD9KxodU9fkg5BOODFQpocWZhqGC6Ee2Von6siyK8mBNOP/3pVlJ5mQAqX00BlOiVar1XtvV883Kyo4HdP+aDgaMugPB/GgP+h2B4fJEecAaTqKe/30kAZUsQww07JYQlQvArpgsnTB1epUA7PAo164SagqTOHCFJItr5tMjCRzIbkGRcc3twEtmMZUC5qOVztbz0UmWQwSU6/czeTCQ9sH1y6LvbHP+wrkmjtQ3YDCvQXFAdGkTBoIaMYUZzbXSzq2usQAkueXSi7XGXOhrGebsXsjfuK1H7ouLwWklzRKrJdRo5IPp2fMsglWTmyp16LlIgHjheGQslLa0+2YT7gsrMiVP1LTbE7nsszUhZeErgtsNaU0CAIKx9Mhb2ikk3l+97VFeS5ULUmzKfOEyfWKWatFXFqHZ0VBQoaFoowVhVCzqND5QtSHEUsWziQuwlTmd3ipETMVssQBD1FWFp5j/KwOXzMtHIsvWAYPI0xxtaeHPtp20bWEVgE1S3MqmTEb2qh39KN0oL0IDd3IK+aOJFoU9gSxLKDtrY85Ult34uqxXHrQmapO5yTB9hji+Byc1ASJI0hKg5oQOweS8qiO5PF3SGxIJnUBkpXGEg3YfkUYqV9ZSFzFSzeURJVZjD/CkDxNDVgSL8m7HhGKfNQ61+QTzqd0V0zAy1qDWTAh6wHP6yExpBk6UhYIrNAI1Z2Z0nBKCUvxSbbw3HG4Z1khYYxoNDHzXFtsUUKmJT5J3iaGOAOzGegwKTWOjA3rRNfjmhfeeoy1DqZqqmhVVUHrPvGjb5xtnnMqQHKz5TzGou14ECl/768B/q3QItfCLh/uJDmTCAciX8onPPSpV6v7h273tBKt2523UuxK07ocYL+QROSl2nG6ZpNcN5uN2/Vey+2Oht3u/2R4ntmL/W7jS7uq7/Gm4N/ZY2EA35vPfrkVbhndk6ZYP5Q3P3yxHzas1hUag2zCrlx/pODO/znGXhm2AL4eZOxP60lvTfibj1LnOY3IgIsy+20vqur2F0xx5FxRCwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=db1c421193689790bbb7f9fbdd03d611"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=561bca1193689790bbb7f9fbdd03d685"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=561bca1193689790bbb7f9fbdd03d685"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=561bca1193689790bbb7f9fbdd03d685"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=561bca1193689790bbb7f9fbdd03d685"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_variable_561bca1193689790bbb7f9fbdd03d685"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_561bca1193689790bbb7f9fbdd03d685</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-13 13:17:38</sys_created_on>
+        <sys_id>95bbce5193689790bbb7f9fbdd03d603</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Smart Urban Corporation Management" source="x_2258429_smart_0">b8135a8493d09310bbb7f9fbdd03d60c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Urban Corporation Management">b8135a8493d09310bbb7f9fbdd03d60c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-13 13:17:38</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_561bca1193689790bbb7f9fbdd03d685</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-13 13:17:38</sys_created_on>
+        <sys_id>d1bbce5193689790bbb7f9fbdd03d60f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Smart Urban Corporation Management" source="x_2258429_smart_0">b8135a8493d09310bbb7f9fbdd03d60c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Urban Corporation Management">b8135a8493d09310bbb7f9fbdd03d60c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-13 13:17:38</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_561bca1193689790bbb7f9fbdd03d685"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_561bca1193689790bbb7f9fbdd03d685"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=integrated,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
+        <copied_from_name/>
+        <description>Whenever a citizen submits anew civic issue, automatically set its initial status and priority.</description>
+        <flow_priority/>
+        <internal_name>civic_issue_flow</internal_name>
+        <label_cache>[{"name":"Created_1.table_name","label":"Trigger - Record Created➛Civic Issue Table","reference":"x_2258429_smart_0_civic_issue","reference_display":"Civic Issue","type":"table_name","base_type":"table_name","usedInstances":{"ae34f81c-86bf-4347-9b36-891e6bd2b84f":["table_name"]},"attributes":{"test_input_hidden":"true"}}]</label_cache>
+        <master>true</master>
+        <name>Civic Issue Flow</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Civic Issue Flow">561bca1193689790bbb7f9fbdd03d685</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-13 13:43:49</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>01b11a1d93689790bbb7f9fbdd03d677</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Smart Urban Corporation Management">b8135a8493d09310bbb7f9fbdd03d60c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-13 13:43:49</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=01b11a1d93689790bbb7f9fbdd03d677"/>
+    <sys_variable_value action="delete_multiple" query="document_key=01b11a1d93689790bbb7f9fbdd03d677"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=01b11a1d93689790bbb7f9fbdd03d677"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=01b11a1d93689790bbb7f9fbdd03d677^sys_idNOT IN01b11a1d93689790bbb7f9fbdd03d679"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>01b11a1d93689790bbb7f9fbdd03d677</id>
+        <name>Civic Issue Flow</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-13 13:43:49</sys_created_on>
+        <sys_id>01b11a1d93689790bbb7f9fbdd03d679</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-13 13:43:49</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=01b11a1d93689790bbb7f9fbdd03d679"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=01b11a1d93689790bbb7f9fbdd03d677^sys_idNOT IN89b11a1d93689790bbb7f9fbdd03d67a,c1b11a1d93689790bbb7f9fbdd03d6ca"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Civic Issue Flow">01b11a1d93689790bbb7f9fbdd03d677</model>
+        <model_id>01b11a1d93689790bbb7f9fbdd03d677</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_01b11a1d93689790bbb7f9fbdd03d677</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-13 13:43:49</sys_created_on>
+        <sys_id>89b11a1d93689790bbb7f9fbdd03d67a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Smart Urban Corporation Management">b8135a8493d09310bbb7f9fbdd03d60c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-13 13:43:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=89b11a1d93689790bbb7f9fbdd03d67a"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Civic Issue Flow">01b11a1d93689790bbb7f9fbdd03d677</model>
+        <model_id>01b11a1d93689790bbb7f9fbdd03d677</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_01b11a1d93689790bbb7f9fbdd03d677</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-13 13:43:50</sys_created_on>
+        <sys_id>c1b11a1d93689790bbb7f9fbdd03d6ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Smart Urban Corporation Management">b8135a8493d09310bbb7f9fbdd03d60c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-13 13:43:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c1b11a1d93689790bbb7f9fbdd03d6ca"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=01b11a1d93689790bbb7f9fbdd03d677"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=01b11a1d93689790bbb7f9fbdd03d677"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=01b11a1d93689790bbb7f9fbdd03d677^sys_idNOT INd5b11a1d93689790bbb7f9fbdd03d6ec"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Civic Issue Flow">01b11a1d93689790bbb7f9fbdd03d677</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-13 13:43:50</sys_created_on>
+        <sys_id>d5b11a1d93689790bbb7f9fbdd03d6ec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-13 13:43:50</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VYXW/iOBT9K1GediVGygcU6Nss7WgrdVstZXYfqm7kODZYa2wmcdJhR/3ve50PCPmgUKBDXyrF1/U99/j4XJvHHyZHPuHmpTlBPidmx2RCkVAgPlkuCAwrPewJNNexORIBUjJcmpcqjEnHpKGcT8h8wZGCyRTxCAZlGJDQvLQ7ZoJ4TB6W0U0AK8H/p8vka5p5GL6/e47TG3SdoRfNUag8y8MsYdhjURTreQGLIMPyr3z6SAeNmzyIZ4wHIRHm5eNTx1ygEHIonf9HJaSgIG+jWuMuK4tpeJhiNHSIhV3bdRzLcgZd279wfdsJXEQsC+ZVqaqUoxoYW3NBvisiAhKsaKqRGRIU3Au+XM2YwV5kxM3R94j9B6sPLD2PEqgKkyy2+vRynrJhPJMMk/uFYlJkIxnOLCh5PBd3GX7NMKEo5qpgGEbiCNYjCw1Zg8gR0YeZfB4XCb8wkVaXB7nEiK++kFIh82NFIr0VlHHYFC/jJpJxmKIfX4/ux1fe358no9+vx974+mEyvhlNrq/Ml7Qu71usV8wQ5li8rJyXlSy+MML1Bop47gOajhnhkC3UZ6xYUojypbMW+kiKgKWs1MSOi1C0Kfai+m1qt6xWveNSxkLz/1z/WVd2Nvg2RY/K2FNFX1wgFBDUomiflhRd5qQBtGqgp1z3Nm3nI7uIu2tZP0neuZu9Vd1zGRB+tV7OhOB0CnpnYhErzdYzEirylPRQEHglHvVUwPSa3LPa6pp/Xe1hLGAJb7VDdc2nRK4YvWURFPAIJ/aBfIuzbfgE9kUL8tIMMJ3e5hnGsTAk7Cz8MXAcAnfKKCyR3szRNKccFuQEq5JK6Neo/PUH+D0T01IRbRhSzmoQVtlBfEZRcAYlOhDL0zHtoL4lSYXbii283ROKvU39wLYp9Ql1rL52A9tyfWpbfauHaOBaFnZKflCH2IpdVWR0El/YzxWiVMB8B31Wic/BW+UTtJO4kk1lFiRo4eTmMzoONPtI0BwNrWKi7l4uuhJrNny1qdltpR35boGCBMF/BLuaqZ6wg2tSLp/BwA93TB/hf6ehjEVQ9SydwmDCWM8wfsnp/PV07kllSLbj2ZxxTr653pRC1kgsT+aYLrX9IekSC4zSBY/0e8Ohj5FDaf+iTxy74phrcI2IP4RTviLJpEnTba7ZKKekSYV7+OUBAGveuTfAw10zl2ujZ2axj+GOzzMiPIAaelz7X80kp5wFpIgd1wNqqZP1qT+WD9zmRensdDDEPbvfx314Q4EL0C7xkd11emjYv3AHvYoL1OBtg64a2HqXl1W0jFIgLQ7xNQud148Ip5RyRJTSjevgbi/gepwugbKcpRard8lIfUeGxp0Un27W84wHAp0zfW2fqO3vAkpvu/GuqHypZrVrCCD5DcY3kOjLbQtnZ/e6qygq2az1RK870h30htRtdik6bHKpNcR28Gd/a9nxVCWt57Pp+rLrqUgaD1frfeMNwq6Ip3wR2XJTOhYp9tFJcU5Hinvw7aw4oa1P2reA/UBdML2aHLEVagjEk7Ts8FfSgIABOQ1GjfyXUhIY/tJQMwIMc7iVQ35DgznU2rd0njqylb5/Kq7sFVBriDBs5Be28+t1Fd28x9ucBH3U67ktt/Jh9W3eBPOVKs6+8+19kpKmg7m1/e23bnXNxgZYEvKmTnZsbUeturm/HVZ1Y4d7rerDe9e2XxYaUJxpV3r6H0GUsAaTIAAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=01b11a1d93689790bbb7f9fbdd03d677^sys_idNOT INd9b11a1d93689790bbb7f9fbdd03d6dd"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>ab575ae253b3230034c6ddeeff7b12f1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Civic Issue Flow">01b11a1d93689790bbb7f9fbdd03d677</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-13 13:43:50</sys_created_on>
+        <sys_id>d9b11a1d93689790bbb7f9fbdd03d6dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Smart Urban Corporation Management">b8135a8493d09310bbb7f9fbdd03d60c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-13 13:43:50</sys_updated_on>
+        <ui_id>ae34f81c-86bf-4347-9b36-891e6bd2b84f</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VTVPbMBD9KxodU9fkg5BOODFQpocWZhqGC6Ee2Von6siyK8mBNOP/3pVlJ5mQAqX00BlOiVar1XtvV883Kyo4HdP+aDgaMugPB/GgP+h2B4fJEecAaTqKe/30kAZUsQww07JYQlQvArpgsnTB1epUA7PAo164SagqTOHCFJItr5tMjCRzIbkGRcc3twEtmMZUC5qOVztbz0UmWQwSU6/czeTCQ9sH1y6LvbHP+wrkmjtQ3YDCvQXFAdGkTBoIaMYUZzbXSzq2usQAkueXSi7XGXOhrGebsXsjfuK1H7ouLwWklzRKrJdRo5IPp2fMsglWTmyp16LlIgHjheGQslLa0+2YT7gsrMiVP1LTbE7nsszUhZeErgtsNaU0CAIKx9Mhb2ikk3l+97VFeS5ULUmzKfOEyfWKWatFXFqHZ0VBQoaFoowVhVCzqND5QtSHEUsWziQuwlTmd3ipETMVssQBD1FWFp5j/KwOXzMtHIsvWAYPI0xxtaeHPtp20bWEVgE1S3MqmTEb2qh39KN0oL0IDd3IK+aOJFoU9gSxLKDtrY85Ult34uqxXHrQmapO5yTB9hji+Byc1ASJI0hKg5oQOweS8qiO5PF3SGxIJnUBkpXGEg3YfkUYqV9ZSFzFSzeURJVZjD/CkDxNDVgSL8m7HhGKfNQ61+QTzqd0V0zAy1qDWTAh6wHP6yExpBk6UhYIrNAI1Z2Z0nBKCUvxSbbw3HG4Z1khYYxoNDHzXFtsUUKmJT5J3iaGOAOzGegwKTWOjA3rRNfjmhfeeoy1DqZqqmhVVUHrPvGjb5xtnnMqQHKz5TzGou14ECl/768B/q3QItfCLh/uJDmTCAciX8onPPSpV6v7h273tBKt2523UuxK07ocYL+QROSl2nG6ZpNcN5uN2/Vey+2Oht3u/2R4ntmL/W7jS7uq7/Gm4N/ZY2EA35vPfrkVbhndk6ZYP5Q3P3yxHzas1hUag2zCrlx/pODO/znGXhm2AL4eZOxP60lvTfibj1LnOY3IgIsy+20vqur2F0xx5FxRCwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d9b11a1d93689790bbb7f9fbdd03d6dd"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=01b11a1d93689790bbb7f9fbdd03d677"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=01b11a1d93689790bbb7f9fbdd03d677"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=01b11a1d93689790bbb7f9fbdd03d677"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=01b11a1d93689790bbb7f9fbdd03d677"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_variable_01b11a1d93689790bbb7f9fbdd03d677"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_01b11a1d93689790bbb7f9fbdd03d677</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-13 13:43:50</sys_created_on>
+        <sys_id>09b11a1d93689790bbb7f9fbdd03d6d1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Smart Urban Corporation Management" source="x_2258429_smart_0">b8135a8493d09310bbb7f9fbdd03d60c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Urban Corporation Management">b8135a8493d09310bbb7f9fbdd03d60c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-13 13:43:50</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_01b11a1d93689790bbb7f9fbdd03d677</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-13 13:43:50</sys_created_on>
+        <sys_id>0db11a1d93689790bbb7f9fbdd03d693</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Smart Urban Corporation Management" source="x_2258429_smart_0">b8135a8493d09310bbb7f9fbdd03d60c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Urban Corporation Management">b8135a8493d09310bbb7f9fbdd03d60c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-13 13:43:50</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_01b11a1d93689790bbb7f9fbdd03d677"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_01b11a1d93689790bbb7f9fbdd03d677"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>561bca1193689790bbb7f9fbdd03d685</sys_id>
+        <latest_snapshot>01b11a1d93689790bbb7f9fbdd03d677</latest_snapshot>
+        <compiler_build>glide-australia-02-11-2026__patch7-09-17-2026_10-06-2026_0905.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=561bca1193689790bbb7f9fbdd03d685^sys_idNOT INd9b15a1d93689790bbb7f9fbdd03d607"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"@class":"com.snc.process_flow.engine.serialization.plan_data.ChunkingPlanData","chunk_data":{"table":"sys_flow_trigger_plan","id":"d9b15a1d93689790bbb7f9fbdd03d607","name":"plan","plan_signature":null},"plan_data":"CHUNKING_PLAN"}</plan>
+        <plan_id>561bca1193689790bbb7f9fbdd03d685</plan_id>
+        <snapshot>3322d65d93689790bbb7f9fbdd03d654</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-13 13:43:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d9b15a1d93689790bbb7f9fbdd03d607</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-13 13:43:51</sys_updated_on>
+        <trigger display_value="">11b15a1d93689790bbb7f9fbdd03d605</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=561bca1193689790bbb7f9fbdd03d685"/>
+</record_update>

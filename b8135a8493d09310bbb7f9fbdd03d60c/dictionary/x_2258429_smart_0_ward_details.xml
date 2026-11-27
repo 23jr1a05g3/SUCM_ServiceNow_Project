@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="a7d5fd0493e85f50bbb7f9fbdd03d64d" label="ward Details" max_length="40" name="x_2258429_smart_0_ward_details" type="collection">
+        <element label="Population" max_length="40" name="population" type="integer"/>
+        <element label="Latitude" max_length="38" name="latitude" type="decimal"/>
+        <element label="Area" max_length="40" name="area" type="string"/>
+        <element label="Longitude" max_length="38" name="longitude" type="decimal"/>
+        <element label="Ward Number" max_length="40" name="ward_number" type="integer"/>
+        <element label="Ward Name" max_length="40" name="code" type="string"/>
+        <element label="Health Score" max_length="40" name="health_score" type="integer"/>
+        <element label="ward Number" max_length="40" name="name" type="string"/>
+    </element>
+</database>

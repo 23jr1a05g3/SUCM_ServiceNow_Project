@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="decfec617ae8d7909a8b92acf8131dac" sys_domain="global" table="sys_user" version="3" view="custom_portal_settings_x_2258429_smart_0">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>time_zone</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-11-14 01:14:37</sys_created_on>
+            <sys_id>d6cfec6105e8d790067a628a95e5cdad</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sys_user" sys_domain="global" view="d2cfec6155e8d790920a0493c22432ad">decfec617ae8d7909a8b92acf8131dac</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-11-14 01:14:37</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-11-14 01:14:37</sys_created_on>
+            <sys_id>dacfec6178e8d790ef893f92a53221ad</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sys_user" sys_domain="global" view="d2cfec6155e8d790920a0493c22432ad">decfec617ae8d7909a8b92acf8131dac</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-11-14 01:14:37</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>preferred_language</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-11-14 01:14:37</sys_created_on>
+            <sys_id>56cfec6143e8d79030e865d94877c1ab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sys_user" sys_domain="global" view="d2cfec6155e8d790920a0493c22432ad">decfec617ae8d7909a8b92acf8131dac</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-11-14 01:14:37</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>sys_user</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-11-14 01:14:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>decfec617ae8d7909a8b92acf8131dac</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sys_user</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Smart Urban Corporation Management" source="x_2258429_smart_0">b8135a8493d09310bbb7f9fbdd03d60c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Smart Urban Corporation Management">b8135a8493d09310bbb7f9fbdd03d60c</sys_scope>
+            <sys_update_name>sys_ui_section_decfec617ae8d7909a8b92acf8131dac</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-11-14 01:14:37</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Custom portal settings (x_2258429_smart_0)" name="custom_portal_settings_x_2258429_smart_0">d2cfec6155e8d790920a0493c22432ad</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

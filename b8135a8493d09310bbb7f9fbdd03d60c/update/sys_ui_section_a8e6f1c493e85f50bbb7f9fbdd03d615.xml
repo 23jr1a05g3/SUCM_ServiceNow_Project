@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="a8e6f1c493e85f50bbb7f9fbdd03d615" sys_domain="global" table="x_2258429_smart_0_utility_risk_alet" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>asset_id</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-11-12 14:10:54</sys_created_on>
+            <sys_id>805e898593a41790bbb7f9fbdd03d657</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_2258429_smart_0_utility_risk_alet" sys_domain="global" view="Default view">a8e6f1c493e85f50bbb7f9fbdd03d615</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-11-12 14:10:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>asset_name</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-11-12 14:10:55</sys_created_on>
+            <sys_id>005e898593a41790bbb7f9fbdd03d68e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_2258429_smart_0_utility_risk_alet" sys_domain="global" view="Default view">a8e6f1c493e85f50bbb7f9fbdd03d615</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-11-12 14:10:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>asset_type</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-11-12 14:10:55</sys_created_on>
+            <sys_id>085e898593a41790bbb7f9fbdd03d69b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_2258429_smart_0_utility_risk_alet" sys_domain="global" view="Default view">a8e6f1c493e85f50bbb7f9fbdd03d615</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-11-12 14:10:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>service_department</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-11-12 14:17:34</sys_created_on>
+            <sys_id>a1df854993a41790bbb7f9fbdd03d68b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_2258429_smart_0_utility_risk_alet" sys_domain="global" view="Default view">a8e6f1c493e85f50bbb7f9fbdd03d615</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-11-12 14:17:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>location</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-11-12 14:17:34</sys_created_on>
+            <sys_id>65df854993a41790bbb7f9fbdd03d6b3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_2258429_smart_0_utility_risk_alet" sys_domain="global" view="Default view">a8e6f1c493e85f50bbb7f9fbdd03d615</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-11-12 14:17:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>status</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-11-12 14:17:34</sys_created_on>
+            <sys_id>addf854993a41790bbb7f9fbdd03d6cd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_2258429_smart_0_utility_risk_alet" sys_domain="global" view="Default view">a8e6f1c493e85f50bbb7f9fbdd03d615</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-11-12 14:17:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>issued_date</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-11-12 14:17:34</sys_created_on>
+            <sys_id>65df854993a41790bbb7f9fbdd03d6dc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_2258429_smart_0_utility_risk_alet" sys_domain="global" view="Default view">a8e6f1c493e85f50bbb7f9fbdd03d615</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-11-12 14:17:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>active</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-11-12 14:17:34</sys_created_on>
+            <sys_id>b1df854993a41790bbb7f9fbdd03d6f7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_2258429_smart_0_utility_risk_alet" sys_domain="global" view="Default view">a8e6f1c493e85f50bbb7f9fbdd03d615</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-11-12 14:17:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_2258429_smart_0_utility_risk_alet</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-11-09 14:34:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a8e6f1c493e85f50bbb7f9fbdd03d615</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_2258429_smart_0_utility_risk_alet</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Smart Urban Corporation Management" source="x_2258429_smart_0">b8135a8493d09310bbb7f9fbdd03d60c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Smart Urban Corporation Management">b8135a8493d09310bbb7f9fbdd03d60c</sys_scope>
+            <sys_update_name>sys_ui_section_a8e6f1c493e85f50bbb7f9fbdd03d615</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-11-09 14:34:14</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="INSERT_OR_UPDATE">
+        <choices/>
+        <description/>
+        <name>chrome_header</name>
+        <page display_value="Civic Citizen Portal">12cfec61e7e8d790ebf80fbbed3d3152</page>
+        <required_translations>[]</required_translations>
+        <route display_value="Login">56cfec6167e8d790dafb8442c8f9e2a2</route>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-14 01:14:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>9ecfec61a7e8d790756cb54b608c8e69</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>chrome_header</sys_name>
+        <sys_package display_value="Smart Urban Corporation Management" source="x_2258429_smart_0">b8135a8493d09310bbb7f9fbdd03d60c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Urban Corporation Management">b8135a8493d09310bbb7f9fbdd03d60c</sys_scope>
+        <sys_update_name>sys_ux_page_property_9ecfec61a7e8d790756cb54b608c8e69</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-14 01:14:36</sys_updated_on>
+        <type>json</type>
+        <unique_name>x_2258429_smart_0.12cfec61e7e8d790ebf80fbbed3d3152.route.chrome_header.56cfec6167e8d790dafb8442c8f9e2a2</unique_name>
+        <value>{&#13;
+    "privatePage":{&#13;
+       "searchEnabled": false,&#13;
+       "userPrefsEnabled": false,&#13;
+       "menuEnabled": false&#13;
+    },&#13;
+    "publicPage":{&#13;
+       "searchEnabled": false,&#13;
+       "userPrefsEnabled": false,&#13;
+       "menuEnabled": false&#13;
+    }&#13;
+ }</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="delete_multiple" query="documentkey=9ecfec61a7e8d790756cb54b608c8e69"/>
+</record_update>
