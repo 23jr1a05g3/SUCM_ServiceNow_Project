@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_2258429_smart_0.SUCMTriage</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>SUCMTriage</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var SUCMTriage = Class.create();
+SUCMTriage.prototype = {
+  initialize: function () {
+    this.TABLE = 'x_2258429_smart_0_civic_issue';
+    this.RADIUS = 0.004; // about 400 m in degrees
+    // SAMPLE critical sites for the demo (replace with real data)
+    this.SITES = [
+      {n: 'Care Hospital (sample)', lat: 17.4505, lng: 78.3925},
+      {n: 'Govt School (sample)', lat: 17.4955, lng: 78.4005}
+    ];
+  },
+
+  classify: function (text) {
+    var t = (text || '').toLowerCase();
+    var rules = [
+      ['water', 'Pipeline Leakage', /leak|burst|pipe/],
+      ['water', 'Contaminated Water', /contamin|dirty|smell|muddy/],
+      ['water', 'Low Pressure or Shortage', /pressure|shortage|no water|supply/],
+      ['power', 'Transformer Failure', /transformer|spark|feeder/],
+      ['power', 'Streetlight Failure', /streetlight|street light/],
+      ['power', 'Power Cut', /power|electric|outage|voltage|pole|wire/],
+      ['road', 'Waterlogging or Drainage', /waterlog|drain|flood|sewer/],
+      ['road', 'Pothole or Damaged Road', /pothole|road|crater|crack/]
+    ];
+    for (var i = 0; i < rules.length; i++) {
+      if (rules[i][2].test(t)) return {dept: rules[i][0] === 'road' ? 'roads' : rules[i][0], cat: rules[i][1], matched: true};
+    }
+    return {dept: 'roads', cat: 'Needs human review', matched: false};
+  },
+
+  similarOpen: function (cat, lat, lng) {
+    var gr = new GlideRecord(this.TABLE);
+    gr.addQuery('category', cat);
+    gr.addQuery('status', '!=', 'closed');
+    gr.addQuery('latitude', '>=', lat - this.RADIUS);
+    gr.addQuery('latitude', '<=', lat + this.RADIUS);
+    gr.addQuery('longitude', '>=', lng - this.RADIUS);
+    gr.addQuery('longitude', '<=', lng + this.RADIUS);
+    gr.orderBy('sys_created_on');
+    gr.query();
+    return gr;
+  },
+
+  score: function (text, similarCount, lat, lng) {
+    var t = (text || '').toLowerCase(), s = 0, why = [];
+    if (/burst|spark|live wire|accident|collapse|flood|contamin/.test(t)) { s += 3; why.push('severe words +3'); }
+    else if (/leak|pothole|failed|not working|damaged/.test(t)) { s += 1; why.push('moderate words +1'); }
+    if (similarCount > 0) { var b = Math.min(3, similarCount); s += b; why.push(similarCount + ' similar reports +' + b); }
+    for (var i = 0; i < this.SITES.length; i++) {
+      var d = this.SITES[i];
+      if (Math.abs(d.lat - lat) < 0.003 && Math.abs(d.lng - lng) < 0.003) { s += 2; why.push('near ' + d.n + ' +2'); break; }
+    }
+    var p = s >= 6 ? 'critical' : s >= 4 ? 'high' : s >= 2 ? 'medium' : 'low';
+    return {priority: p, score: s, why: why.join('; ')};
+  },
+
+    nextNumber: function () {
+    var gr = new GlideRecord(this.TABLE);
+    gr.orderByDesc('number');
+    gr.setLimit(1);
+    gr.query();
+    var max = 1000;
+    if (gr.next()) max = parseInt(gr.getValue('number'), 10) || 1000;
+    return max + 1;
+  },
+
+  type: 'SUCMTriage'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-13 05:20:29</sys_created_on>
+        <sys_id>985e505d932c5790bbb7f9fbdd03d60f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>SUCMTriage</sys_name>
+        <sys_package display_value="Smart Urban Corporation Management" source="x_2258429_smart_0">b8135a8493d09310bbb7f9fbdd03d60c</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Smart Urban Corporation Management">b8135a8493d09310bbb7f9fbdd03d60c</sys_scope>
+        <sys_update_name>sys_script_include_985e505d932c5790bbb7f9fbdd03d60f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-13 05:27:17</sys_updated_on>
+    </sys_script_include>
+</record_update>

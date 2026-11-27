@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="cc46bd4493e85f50bbb7f9fbdd03d623" label="Work Order" max_length="40" name="x_2258429_smart_0_work_order" type="collection">
+        <element label="Before photo" max_length="255" name="before_photo" type="string"/>
+        <element label="Assigned Crew" max_length="32" name="worker" reference="x_2258429_smart_0_field_crew" type="reference"/>
+        <element label="Due Date" max_length="40" name="due_date" type="glide_date"/>
+        <element label="Escalated" max_length="40" name="escalated" type="boolean"/>
+        <element label="Department" max_length="40" name="department" type="string"/>
+        <element label="Related Issue" max_length="40" name="related_issue" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Power" sequence="1" value="power"/>
+                <element inactive_on_update="false" label="Water" sequence="0" value="water"/>
+                <element inactive_on_update="false" label="Road" sequence="2" value="road"/>
+            </choice>
+        </element>
+        <element label="SLA due" max_length="40" name="sla_due" type="glide_date_time"/>
+        <element choice="1" label="Priority" max_length="40" name="priority" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Low" sequence="2" value="low"/>
+                <element inactive_on_update="false" label="High" sequence="0" value="high"/>
+                <element inactive_on_update="false" label="Medium" sequence="1" value="medium"/>
+            </choice>
+        </element>
+        <element label="Notes" max_length="1000" name="notes" type="string"/>
+        <element label="Status" max_length="40" name="status" type="string"/>
+        <element label="Work Type" max_length="40" name="work_type" type="string"/>
+        <element label="After photo" max_length="255" name="after_photo" type="string"/>
+        <element label="Civic Issue" max_length="32" name="civic_issue" reference="x_2258429_smart_0_civic_issue" type="reference"/>
+        <element label="Work Order ID" max_length="40" name="work_order_id" type="string"/>
+        <index name="index">
+            <element name="civic_issue"/>
+        </index>
+        <index name="index2">
+            <element name="worker"/>
+        </index>
+    </element>
+</database>

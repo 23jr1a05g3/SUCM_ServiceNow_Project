@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_2258429_smart_0.SUCMDispatch</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>SUCMDispatch</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var SUCMDispatch = Class.create();
+SUCMDispatch.prototype = {
+  initialize: function () {
+    this.WO = 'x_2258429_smart_0_work_order';
+    this.CREW = 'x_2258429_smart_0_field_crew';
+    this.SLA = {critical: 4, high: 12, medium: 24, low: 48};
+    this.MAX_OPEN = 3;
+  },
+
+  createWorkOrder: function (issue) {
+    var wo = new GlideRecord(this.WO);
+    wo.initialize();
+    wo.civic_issue = issue.getUniqueValue();
+    wo.department = issue.getValue('department');
+    wo.priority = issue.getValue('priority');
+    wo.status = 'new';
+    wo.escalated = false;
+    var due = new GlideDateTime();
+    due.addSeconds((this.SLA[issue.getValue('priority')] || 24) * 3600);
+    wo.sla_due = due;
+    var woId = wo.insert();
+
+    if (issue.getValue('priority') === 'critical') {
+      wo.get(woId);
+      wo.notes = 'CRITICAL: waiting for officer confirmation before dispatch';
+      wo.update();
+      return woId;
+    }
+    this.autoAssign(woId, issue);
+    return woId;
+  },
+
+  autoAssign: function (woId, issue) {
+    var lat = parseFloat(issue.getValue('latitude')) || 0;
+    var lng = parseFloat(issue.getValue('longitude')) || 0;
+    var crew = new GlideRecord(this.CREW);
+    crew.addQuery('department', issue.getValue('department'));
+    crew.addQuery('available', true);
+    crew.query();
+    var best = null, bestDist = 1e9;
+    while (crew.next()) {
+      if (this._openCount(crew.getValue('member')) >= this.MAX_OPEN) continue;
+      var d = Math.sqrt(Math.pow(parseFloat(crew.getValue('latitude')) - lat, 2) + Math.pow(parseFloat(crew.getValue('longitude')) - lng, 2));
+      if (d < bestDist) { bestDist = d; best = crew.getValue('member'); }
+    }
+    var wo = new GlideRecord(this.WO);
+    if (!wo.get(woId)) return null;
+    if (!best) {
+      wo.notes = 'No free worker available, needs manual assignment';
+      wo.update();
+      return null;
+    }
+    wo.worker = best;
+    wo.status = 'assigned';
+    wo.update();
+    return best;
+  },
+
+  _openCount: function (userId) {
+    var ga = new GlideAggregate(this.WO);
+    ga.addQuery('worker', userId);
+    ga.addQuery('status', 'NOT IN', 'closed,officer_verified');
+    ga.addAggregate('COUNT');
+    ga.query();
+    return ga.next() ? parseInt(ga.getAggregate('COUNT'), 10) : 0;
+  },
+
+  type: 'SUCMDispatch'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-13 05:52:48</sys_created_on>
+        <sys_id>9b856c59936c5790bbb7f9fbdd03d662</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>SUCMDispatch</sys_name>
+        <sys_package display_value="Smart Urban Corporation Management" source="x_2258429_smart_0">b8135a8493d09310bbb7f9fbdd03d60c</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Smart Urban Corporation Management">b8135a8493d09310bbb7f9fbdd03d60c</sys_scope>
+        <sys_update_name>sys_script_include_9b856c59936c5790bbb7f9fbdd03d662</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-13 06:02:01</sys_updated_on>
+    </sys_script_include>
+</record_update>

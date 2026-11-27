@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="ef85350493e85f50bbb7f9fbdd03d6a0" label="Infrastructure Asset" max_length="40" name="x_2258429_smart_0_infrastructure_asset" type="collection">
+        <element choice="1" label="Type" max_length="40" name="type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Feeder" sequence="1" value="feeder"/>
+                <element inactive_on_update="false" label="Road segment" sequence="4" value="road_segment"/>
+                <element inactive_on_update="false" label="Pumping station" sequence="0" value="pumping_station"/>
+                <element inactive_on_update="false" label="Transformer" sequence="2" value="transformer"/>
+                <element inactive_on_update="false" label="Pipeline" sequence="3" value="pipeline"/>
+            </choice>
+        </element>
+        <element choice="1" label="status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="At Risk" sequence="1" value="at_risk"/>
+                <element inactive_on_update="false" label="OK" sequence="0" value="ok"/>
+                <element inactive_on_update="false" label="Failed" sequence="2" value="failed"/>
+            </choice>
+        </element>
+        <element choice="1" label="Department" max_length="40" name="department" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="power" sequence="1" value="power"/>
+                <element inactive_on_update="false" label="water" sequence="0" value="water"/>
+                <element inactive_on_update="false" label="Roads" sequence="2" value="roads"/>
+            </choice>
+        </element>
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <element label="ward" max_length="32" name="ward" reference="x_2258429_smart_0_ward_details" type="reference"/>
+        <element label="Asset Type" max_length="40" name="asset_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Water" sequence="0" value="water"/>
+                <element inactive_on_update="false" label="Power" sequence="1" value="power"/>
+            </choice>
+        </element>
+        <element label="Location" max_length="40" name="location" type="string"/>
+        <element label="Latitude" max_length="38" name="latitude" type="decimal"/>
+        <element label="Asset Name" max_length="40" name="asset_name" type="string"/>
+        <element label="Depends On" max_length="32" name="depends_on" reference="x_2258429_smart_0_infrastructure_asset" type="reference"/>
+        <element label="Longitude" max_length="38" name="longitude" type="decimal"/>
+        <index name="index">
+            <element name="depends_on"/>
+        </index>
+        <index name="index2">
+            <element name="ward"/>
+        </index>
+    </element>
+</database>

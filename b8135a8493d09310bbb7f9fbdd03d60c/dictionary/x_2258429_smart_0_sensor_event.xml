@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="0966b18493e85f50bbb7f9fbdd03d6fb" label="Sensor Event" max_length="40" name="x_2258429_smart_0_sensor_event" type="collection">
+        <element label="Sensor ID" max_length="40" name="sensor_id" type="integer"/>
+        <element label="Thresold" max_length="40" name="thresold" type="string"/>
+        <element label="Time Stamp" max_length="40" name="time_stamp" type="insert_timestamp"/>
+        <element label="Value" max_length="20" name="value" type="decimal"/>
+        <element label="Source" max_length="20" name="source" type="string"/>
+        <element label="Severity" max_length="40" name="severit0" type="string"/>
+        <element label="Reading" max_length="40" name="reading" type="string"/>
+        <element label="Asset" max_length="32" name="asset" reference="x_2258429_smart_0_infrastructure_asset" type="reference"/>
+        <element label="Sensor type" max_length="60" name="sensor_type" type="string"/>
+        <element label="Unit" max_length="20" name="unit" type="string"/>
+        <element label="Severity" max_length="20" name="severity" type="string"/>
+        <element label="Message" max_length="255" name="message" type="string"/>
+        <element label="Event Type" max_length="40" name="event_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Power" sequence="1" value="power"/>
+                <element inactive_on_update="false" label="Water" sequence="0" value="water"/>
+                <element inactive_on_update="false" label="Road" sequence="2" value="road"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="asset"/>
+        </index>
+    </element>
+</database>

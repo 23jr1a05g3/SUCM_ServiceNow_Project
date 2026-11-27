@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Landing Page">52cfec6191e8d7906912248a279074ab</macroponent>
+        <name>Card click redirection for My requests</name>
+        <preset/>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[function handler({
+    api,
+    event,
+    imports
+}) {
+    const {
+        setState,
+        emit
+    } = api;
+
+    const table = event.payload.table;
+    const sysId = event.payload.sysId;
+    const route = "record_request";
+
+    if (table === "sc_req_item") {
+        emit('NAV_ITEM_SELECTED', {
+            route,
+            fields: {
+                table,
+                sysId
+            }
+        });
+    } else if(table == "incident"){
+        emit('NAV_ITEM_SELECTED', {
+            route,
+            fields: {
+                table: "incident",
+                sysId
+            }
+        });
+    }
+    else{
+        emit('NAV_ITEM_SELECTED', {
+            route,
+            fields: {
+                table: "task",
+                sysId
+            }
+        });
+    }
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-14 01:14:35</sys_created_on>
+        <sys_id>5ecfec615fe8d790f5b49eb21a0a969b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Card click redirection for My requests</sys_name>
+        <sys_package display_value="Smart Urban Corporation Management" source="x_2258429_smart_0">b8135a8493d09310bbb7f9fbdd03d60c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Urban Corporation Management">b8135a8493d09310bbb7f9fbdd03d60c</sys_scope>
+        <sys_update_name>sys_ux_client_script_5ecfec615fe8d790f5b49eb21a0a969b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-14 01:14:35</sys_updated_on>
+        <target/>
+        <type/>
+    </sys_ux_client_script>
+</record_update>
